@@ -1,7 +1,7 @@
 {
   "name": "rick_morty_migrarion_code",
-  "version": "1.0.0",
   "type": "module",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,10 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.1",
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "axios": "^1.9.0",
+    "axios-rate-limit": "^1.4.0",
     "nodemon": "^3.1.10",
     "typescript": "^5.9.2"
   },
