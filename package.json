@@ -1,6 +1,5 @@
 {
   "name": "rick_morty_migrarion_code",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

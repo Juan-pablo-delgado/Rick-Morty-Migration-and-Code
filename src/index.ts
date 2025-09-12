@@ -1,7 +1,7 @@
-import app from "./app.ts";
+import app from "./app";
+import { envVariables } from "./config/envVariables";
 
-process.loadEnvFile();
-const PORT = process.env.PORT || 2000;
+const { PORT } = envVariables;
 
 app
   .listen(PORT, () => {
