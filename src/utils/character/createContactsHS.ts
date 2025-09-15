@@ -1,8 +1,8 @@
-import { https } from "../config/rateLimit";
-import { headers } from "../config/headers";
-import { Character } from "../interfaces/character";
+import { https } from "../../config/rateLimit";
+import { headers } from "../../config/headers";
+import { Character } from "../../interfaces/character";
 
-export const createContacts = (character: Character) => {
+export const createContacts = async (character: Character) => {
   const fullName = character.name.split(" ");
   const properties = {
     character_id: character.id,
@@ -15,7 +15,7 @@ export const createContacts = (character: Character) => {
   };
 
   try {
-    https.post(
+    await https.post(
       "https://api.hubapi.com/crm/v3/objects/contacts",
       { properties },
       { headers }

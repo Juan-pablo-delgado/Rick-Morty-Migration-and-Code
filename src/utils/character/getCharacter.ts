@@ -1,5 +1,6 @@
 import axios from "axios";
-export const getCharacter = async (id: number) => {
+import { Character } from "../../interfaces/character";
+export const getCharacter = async (id: number): Promise<Character> => {
   try {
     const response = await axios
       .get(`https://rickandmortyapi.com/api/character/${id}`)
